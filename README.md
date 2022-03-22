@@ -32,8 +32,8 @@ THEN the password is either displayed in an alert or written to the page.
 
 ### Installing and Opening file
 
-- GitHub: https://github.com/Plavala/CBHW-W1-CodeRefactor
-- GitHub live: https://plavala.github.io/CBHW-W1-CodeRefactor/
+- GitHub: https://github.com/Plavala/CBHW-W3-Password-Generator
+- GitHub live: https://plavala.github.io/CBHW-W3-Password-Generator/
 - Clone GitHub repository provided
 - Open with VScode or any Code reader that works similar to VScode.
 - Right click file index.html and select "open with live server"

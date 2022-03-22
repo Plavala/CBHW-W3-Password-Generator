@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// The desierd password length
 function promtPassworedDetails() {
   do{
     var length = prompt("Please enter desired password length (8-128)");
@@ -13,7 +13,8 @@ function promtPassworedDetails() {
     }
   } while (length<8 || length>128)
    
-  do {
+  // Prompts regarding desired characters
+ do {
     var lowercase= confirm("Do you want lowercase letters in your password?");
     var uppercase = confirm("Do you want uppercase letters in your password?");
     var number = confirm("Do you want numbers in your password?");
@@ -26,6 +27,8 @@ function promtPassworedDetails() {
 
   writePassword(length, lowercase, uppercase, number, symbol)
 }
+// all possible characters and combos
+
 function writePassword(length, hasLowercase, hasUppercase, hasNumber, hasSymbol) {
   var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -45,6 +48,7 @@ function writePassword(length, hasLowercase, hasUppercase, hasNumber, hasSymbol)
   if (hasSymbol) {
     possibleChars = possibleChars.concat(special);
   }
+// the Math magic
 
   var password = "";
   for (var i = 0; i < length; i++){
